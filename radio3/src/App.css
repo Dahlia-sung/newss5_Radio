@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+}
+
+.Lp-logo {
+  height: 65vmin;
+  pointer-events: none;
+  position: relative;
+}
+
+.Lp-logo:hover {
+  filter: invert(34%) sepia(85%) saturate(5084%) hue-rotate(15deg) brightness(109%) contrast(102%);
+}
+
+.Lp-logo-line {
+  height: 80vmin;
+  pointer-events: none;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Lp-logo {
+    animation: Lp-logo-spin infinite 5s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+@keyframes Lp-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

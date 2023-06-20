@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Hallym';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hallym';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Medium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hallym';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/hallym/Hallym-Bold.ttf') format("truetype");
+    font-display: swap;
+}
+
+* {
+    font-family: "Hallym";
+    margin: auto 0;
+    padding: 0;
+}
+
+.title {
+    border: 1px solid red;
+}
+
+.title_logo {
+    border: 1px solid blue;
+}
+
+.logo {
+    display: flex !important;
+    align-items: center !important;
+    height: 70px !important;
+}
+
+.logo img {
+    width: 300px;
+    /* border: 1px solid red; */
+}
+
+.searchBtn {
+    width: 100px;
+    margin-left: 15px;
+}
+
+/* 태블릿 992px 미만 적용 미디어쿼리 */
+/* 0.02px을 빼는 이유 : 브라우저는 현재 범위 컨텍스트 쿼리를 지원하지 않기 때문에 더 높은 정밀도의 값을 사용하여 분수 너비(ex:높은 dpi기기의 특정 조건에서 발생 할 수 있음)가 있는 min-, max- 접두사 및 뷰포트의 제한 사항을 해결하기 위해서임. */
+/* 초소형 세로폰 : 576px 미만, max-width: 575.98px 
+   소형 가로폰 : 768px 미만, max-width: 767.98px
+   데스크탑 PC : 1200px 미만, max-width: 1199.98px 
+   대형 데스크탑 PC : 1400px 미만, max-width: 1399.98px*/
+@media(max-width: 991.98px) {
+
+    .logo img {
+        width: 200px;
+    }
+
+}
