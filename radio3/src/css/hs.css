@@ -79,3 +79,49 @@
     }
 
 }
+
+.me-auto {
+    float: left;
+    border: 1px solid red;
+    margin-left: 300px;
+
+}
+
+.line {
+    border: 1px solid green;
+    margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    height: auto;
+    text-align: center;
+
+}
+
+.logo {
+    border: 1px solid blue;
+    float: left !important;
+}
+
+.TopTest {
+    border: 1px solid green;
+    margin: auto;
+    width: 95%;
+}
+
+.logo_ {
+    border: 1px solid pink;
+    display: inline-block;
+}
+
+.me-auto- {
+    border: 1px solid saddlebrown;
+    display: inline-block;
+}
+
+.test {
+    float: right;
+    border: 1px solid salmon;
+    display: inline-block;
+    margin-right: 10px;
+
+}
